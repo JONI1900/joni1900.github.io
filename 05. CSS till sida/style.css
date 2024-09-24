@@ -1,0 +1,5 @@
+img:nth-of-type(1) {
+    content:url("http://imgur.com/SZ8Cm.jpg");
+
+    border: 500px solid black;
+}
