@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Apor Layout</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#start" onclick="showSection('start')">Start</a>
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#länk1" onclick="showSection('länk1')">Länk1</a>
+        <a href="#länk2" onclick="showSection('länk2')">Länk2</a>
+        <a href="#länk3" onclick="showSection('länk3')">Länk3</a>
+    </div>
+    <main class="content">
+        <div id="start" class="start-section active">
+            
+            <p>Lite fakta om denna fina sidan</p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde harum libero nostrum eos commodi ullam ducimus vel nobis temporibus. Officia molestias neque debitis doloremque tempora labore quis modi assumenda sint. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo facilis quae suscipit beatae aliquid placeat aperiam illum, velit tempora animi, corrupti quia reiciendis accusantium, accusamus est voluptatibus alias doloribus consectetur.
+            </p>
+        
+        </div>
+
+        <div id="home" class="circle-images">
+            <div>
+                <img src="bild(1).png" alt="Apa 1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro ipsam eaque exercitationem rem doloribus ipsum odio officia, dolores placeat reiciendis quam adipisci quis. Id dolore aperiam sit nisi voluptas?</p>
+            </div>
+            <div>
+                <img src="bild.png2" alt="Apa 2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione amet minima architecto molestias eligendi impedit quis similique quasi, error officia fugit explicabo dolorem voluptatibus? Corporis commodi velit consequatur enim eveniet!</p>
+            </div>
+            <div>
+                <img src="wierdanimal.jpg1" alt="Apa 3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dignissimos, maiores eveniet dolores eius, ea sequi minima neque nam nobis veniam! Earum praesentium, dicta nam totam magnam fugiat voluptatibus recusandae?</p>
+            </div>
+        </div>
+
+        <section id="länk1" class="image-row">
+            <h2>Länk1</h2>
+            <div>
+                <img src="WierdAnimal1.jpg" alt="Apa 4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iure odit deleniti magni excepturi ea, nesciunt sed quia aliquam, eaque placeat accusantium modi, est a perferendis rerum necessitatibus consequuntur laborum!</p>
+            </div>
+            <div>
+                <img src="WierdAnimal3.jpg" alt="Apa 5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eveniet architecto, mollitia harum suscipit possimus laudantium nulla id perspiciatis, excepturi delectus impedit facilis maxime fugiat reprehenderit quod fugit, omnis minima.</p>
+            </div>
+        </section>
+
+        <section id="länk2" class="image-row">
+            <h2>Länk2</h2>
+            <div>
+                <img src="WierdAnimal5.jpg" alt="Apa 6">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil sunt harum repellat, impedit neque obcaecati dolor quo, odit nulla nesciunt eum recusandae quam necessitatibus. Fugit amet corrupti fuga assumenda officiis.</p>
+            </div>
+            <div>
+                <img src="WierdAnimal6.jpg" alt="Apa 7">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis deserunt, deleniti blanditiis asperiores atque fugiat error dolor quibusdam, nemo vitae amet quam quidem labore non, itaque excepturi quis quisquam neque?</p>
+            </div>
+        </section>
+
+        <section id="länk3" class="image-row">
+            <h2>Länk3</h2>
+            <div>
+                <img src="WierdAnimal7.jpg" alt="Apa 8">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi, suscipit, exercitationem similique nemo quidem iure ex delectus repudiandae a aut hic illum impedit sint tempora mollitia id quibusdam consequatur.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function showSection(sectionId) {
+            
+            document.querySelectorAll('.start-section, .circle-images, .image-row').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
